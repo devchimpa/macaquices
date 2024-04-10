@@ -3,17 +3,17 @@
 # o script irá exportar novas alias para que o usuário não consiga fazer os comandos
 MEU_IP=$( echo $SSH_CLIENT | awk {'print $1'} )
 
-IP_DO_SAFADO=192.168.2.128
+IP_DO_SAFADO=192.168.2.39
 
 if [ "$MEU_IP" = "$IP_DO_SAFADO" ]
 then
 
-alias nano=" O nano é raiz! Mas você não está pronto para isso."
-alias vi=" Ah, quer editar algo? Tente o nano."
-alias ls=" tá procurando o que? "
-alias cd=" Vai pra onde? "
-alias python3=" ksksskskskk, oh a cobrinha!"
-
+ alias python3="echo 'oh a cobrinha'"
+ alias cd="echo 'Vai onde?'"
+ alias ls="echo 'Quer uma lista? Pêra, Uva, Maçã, Salada Mista'"
+ alias exit="echo 'Quer sair? Sai não. Fica aqui.'"
+ alias vi="echo 'Quer escrever o que?'"
+ alias ifconfig="echo 'O ip dessa máquina é segredinho...'"
 else
         LIBERADO=1
         fi
